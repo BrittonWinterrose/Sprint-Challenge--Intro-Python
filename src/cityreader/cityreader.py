@@ -30,14 +30,13 @@ def cityreader(cities=[]):
     # `cities` list
     import csv
     firstline = True
-    with open("src/cityreader/cities.csv", newline='') as csvfile:
+    with open("cities.csv") as csvfile:
         citycsv = csv.reader(csvfile, delimiter=",")
         for row in citycsv:
             if firstline:  # Skip first row.
                 firstline = False
                 continue
-            print(row[0], row[3], row[4])
-            cities.append(City(row[0], row[3], row[4]))
+            cities.append(City(row[0], float(row[3]), float(row[4])))
         return cities
 
 cityreader(cities)
@@ -51,12 +50,12 @@ for c in cities:
 # Allow the user to input two points, each specified by latitude and longitude.
 # These points form the corners of a lat/lon square. Pass these latitude and
 # longitude values as parameters to the `cityreader_stretch` function, along
-# with the `cities` list that holds all the City instances from the `cityreader`
+# with the `cities` list that holds all the City instances from the`cityreader`
 # function. This function should output all the cities that fall within the
 # coordinate square.
 #
 # Be aware that the user could specify either a lower-left/upper-right pair of
-# coordinates, or an upper-left/lower-right pair of coordinates. Hint: normalize
+# coordinates, or an upper-left/lower-right pair of coordinates. Hint:normalize
 # the input data so that it's always one or the other, then search for cities.
 # In the example below, inputting 32, -120 first and then 45, -100 should not
 # change the results of what the `cityreader_stretch` function returns.
