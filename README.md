@@ -1,6 +1,6 @@
 #  Sprint Challenge: Intro to Python
 
-In this week's Sprint you explored the Python programming language as well as object-oriented design principles. This Sprint Challenge aims to assess your comfort in both of these areas through exercises similar to the ones you worked on at the beginning of this week in Intro to Python.
+In this week's Sprint you explored the Python programming language as well as object-oriented design principles. This Sprint Challenge aims to assess your comfort in both of these areas through exercises similar to the ones you worked on at the beginning of this week in Intro to Python. 
 
 ## Instructions
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
@@ -43,6 +43,6 @@ In your solution, it is essential that you follow best practices and produce cle
 
 ## Stretch Problems
 
-The `cityreader` directory poses an stretch problem that builds upon the functionality you are to implement as part of the non-stretch requirements in the `cityreader` directory. 
+The `cityreader` directory poses an stretch problem that builds upon the functionality you are to implement as part of the non-stretch requirements in the `cityreader` directory.
 
 There's a separate test file `test_stretch.py` for the stretch problem that you can run in order to test your implementation of the stretch problem.
